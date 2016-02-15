@@ -207,8 +207,8 @@ article img	{
 	color: #fafafa;
 }
 
-.buttons a[href*=components] { background-color: #fabe0a; }
-.buttons a[href*=components]:hover { background-color: #e8b211; }
+.buttons a[href*=components] { background-color: #4aa3df; }
+.buttons a[href*=components]:hover { background-color: #2980b9; }
 
 
 /* DROP-DOWN ============================== */
