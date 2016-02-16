@@ -2,3 +2,33 @@
 ============================================================
 ============================================================*/
 
+html, body,#map_canvas {
+    height:100%;
+}
+.container-fluid {
+    height: 300px;
+    width:100%;
+    position:static;
+    top:0;
+    padding:0;
+}
+#map_canvas {
+    border-top:50px solid #fff;
+    border-bottom:20px solid #fff;
+}
+header {
+    height:50px;
+}
+footer {
+    height:20px;
+}
+
+.border {
+	width: 95%;
+	margin: 0 auto;
+	display: block;
+}
+
+.border ul {
+	list-style: none;
+}
