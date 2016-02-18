@@ -98,6 +98,7 @@ h1 {
 	font-size: 45px;
 	font-family: 'Lato', sans-serif;
 	text-align: center;
+	margin-top: 1em;
 }
 
 /* COMPONENTS*/
@@ -110,6 +111,7 @@ section .component div {
 	width: 80%;
 	display: block;
 	margin: 0 auto;
+	padding-top: 1.5em;
 }
 
 .component-one {
