@@ -17,11 +17,16 @@ body {
 
 img {
 	width: 50em;
+	border-radius: 1em;
 }
 
 
 
 /* HEADER ============================== */
+
+header img {
+	width: 20em;
+}
 
 /* ABOUT ============================== */
 
@@ -31,6 +36,11 @@ img {
 	width: 75em;
 	margin: 0 auto;
 	display: block;
+}
+
+article {
+	border: 1em solid #ffffff;
+	margin: 3em;
 }
 
 
