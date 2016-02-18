@@ -3,14 +3,38 @@
 ============================================================*/
 
 
+/* Let's start all over again! Feb. 17th */
+
+body {
+    color: rgb(44, 62, 80);
+    margin: 0px;
+    background: rgb(189, 195, 199);
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: 75em;
+	margin: 0 auto;
+	display: block;
+}
+
+img {
+	width: 50em;
+}
+
+
+
 /* HEADER ============================== */
 
 /* ABOUT ============================== */
 
 /* COMPONENTS ============================== */
 
+#components {
+	width: 75em;
+	margin: 0 auto;
+	display: block;
+}
+
+
 /* Project CSS 
 ============================================================
 ============================================================*/
 
-/* Let's start all over again!*/
