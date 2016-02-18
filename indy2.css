@@ -12,7 +12,7 @@ body {
 
 }
 
-section img {
+img {
 	width: 50em;
 	border-radius: 1em;
 	margin: 0 auto;
@@ -34,10 +34,7 @@ header {
 }
 
 header img {
-	width: 3em;
-	top: 0.25em;
-	right: 0.1em;
-	position: relative;
+	width: 2em;
 }
 
 header.clone {
@@ -116,33 +113,11 @@ section .component div {
 	background-color: #ffffff;
 }
 
-.component-two {
-	background-color: #c0392b;
-	color: #ffffff;
-}
-
-.component-three {
-	background-color: #f39c12;
-}
-
-.component-five {
-	background-color: #34495e;
-	color: #ffffff;
-}
-
 /*Styling*/
 @media only screen and (max-width: 1167px) {
 	
-	body{
-		width: 100%;
-		margin: 0;
-	}
-
-	.component img {
+	body, img{
 		width: 98%;
-	}
-
-	header {
-		font-size: 1em;
+		margin: 0;
 	}
 }

@@ -7,7 +7,7 @@
 
   <title>Web Standards Project</title>
 
-  <link rel="stylesheet" href="indy2.css">
+  <link rel="stylesheet" href="main.css">
 
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -34,7 +34,7 @@
 			$('html, body').animate({
 
         // Autoscroll to the navigation dot's href's position on the page
-				scrollTop: $( $.attr(this, 'href') ).offset().top - 100
+				scrollTop: $( $.attr(this, 'href') ).offset().top - 90
 			}, 500);
 
       //Return scroll position for debugging
@@ -44,7 +44,7 @@
 			return false;
 		});
         
-        // Whenever our page is scrolled
+        // WHENEVER our page is scrolled
         $(document).on('scroll', function() {
 
             // Assign our scroll current position to a variable
@@ -53,17 +53,23 @@
 
             // Uncomment to debug positioning console.log(position);
             
-            // Whenever the 
+            // Set iterator so that the loop finds the component we are currently on
             for (var i=0; i<componentPosition.length; i++) {
 
                 if (position <= componentPosition[i]) {
+
+                	// When the desired component is found, attach that to the index argument.
                     index = i;
                     break;
                 }
             }
             
+
+            // Remove active state from all navigation "a" to active...
             $('.navigation ul li a').removeClass('active');
-            $('.navigation ul li a:eq('+index+')').addClass('active');
+
+            // Then add the active class ONLY to the appropriate navigation dot
+            $('.navigation ul li a:eq('+ index +')').addClass('active');
         });
         
         	$('.navigation ul li a').click(function () {
@@ -89,7 +95,7 @@
 </head>
 <body>
 
-<header>Web Standards Project</header>
+<header><img src="images/WSPlogo3.png" alt="WSP: Web Standards Project"> Web Standards Project</header>
 
  <div class="navigation">
 	 <ul>
@@ -108,7 +114,7 @@
       <div>
         <h1>Hello</h1>    
         <img src="components/1/header.png" alt="Website Header/Navigation Component" /> 
-        <h2>Testimonial Timed Slider</h2>
+        <h1>Testimonial Timed Slider</h1>
         
         <h3>What I hope to practice/learn?</h3>
         <p>When a website is offering any type of service at all, it is important for the new user to know what previous users have felt about the service. Testimonials have come to combat this very issue. In my opinion, having just static testimonials on the page does not really catch the scrolling users attention as much as the section can. And so we have a sliding testimonial bar. In this bar, one testimonial is shown for a few seconds and then the next testimonial appears and the whole process loops infinitely. Using this technique, the sliding testimonial bar gives life to the web page and adds interactivity to the user's experience. I want to practice the timing and animation features of jQuery. </p>
@@ -143,7 +149,7 @@
       <img src="components/2/header.png" alt="Video CTA Component" />
         
 
-      <h2>Post Boxes with Zoomable Image on Hover</h2>
+      <h1>Post Boxes with Zoomable Image on Hover</h1>
       <h3>What I want to practice/learn?</h3>
       <p>Blogs of any sort have a lot of posts for viewers to read. I want to be able to feauture my top posts in the front page through consistent box shapes. I also want the feautured images in the box to zoom in slightly when I hover over them, to indicate what I am selecting.</p>
 
@@ -176,7 +182,7 @@
     <div>
       <img src="components/3/header.png" alt="Team Contact Component" />
 
-      <h2>One Page Vertical Slider</h2>
+      <h1>One Page Vertical Slider</h1>
       <h3>What I want to practice/learn?</h3>
       <p>I want to have my home page have it's content seperated by different vertical slides. I also want the user to know where in the page they are. To do this I will be using the hyperlink attribute to link to different divs throughout my pages. </p>
 
@@ -210,7 +216,7 @@
     <div>
       <img src="components/4/header.png" alt="" />  
 
-      <h2>Sticky Header after Scroll</h2>
+      <h1>Sticky Header after Scroll</h1>
       
       <h3>What I hope to practice/learn?</h3>
       <p>Sometimes users need to know where they are in webpage and how hey can navigate to another part at all times. To have this informtion readily available I want to learn how to make a sticky header. While making a sticky header can be easy, having it stick after the user scrolls is the difficult part. I want to use the jQuery selectors and events handlers to make this effect happen. SO that the scroll sticky header blends in with the original view.</p>
@@ -245,7 +251,7 @@
       <img src="components/5/header.png" alt="Customer Testimonail Component" />
         
 
-      <h2>Footer Map</h2>
+      <h1>Footer Map</h1>
       <h3>What I want to practice/learn?</h3>
       <p>I want to be able to embed a google maps in the footer of webpage to show the locations of my services. I want to be able to use the google maps API to have a wide-width map.</p>
 
