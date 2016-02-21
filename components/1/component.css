@@ -4,13 +4,14 @@
 
 
 body {
- background: #2ecc71;
+ background: #474747;
  }
 
 #carousel {
   position: relative;
   width: 60%;
   margin: 0 auto;
+  border-left: 3px solid #757575;
 }
 
 #slides {
@@ -79,9 +80,8 @@ a#next:hover {
 
 .quote-phrase {
   height: 200px;
-  font-size: 24px;
-  color: #FFF;
-  font-style: italic;
+  font-size: 1em;
+  color: #bcbcbc;
   text-shadow: .5px 0px #b14943;
 }
 
@@ -97,6 +97,7 @@ a#next:hover {
   color: #b14943;
   font-weight: 400;
   height: 30px;
+  position: relative;
 }
 
 .quoteContainer,

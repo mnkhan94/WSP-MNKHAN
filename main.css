@@ -88,7 +88,7 @@ background-color:#3498db;
 }
 .navigation a.active{
 border-radius:25px;
-background-color:#ecf0f1;
+background-color:#d35400;
 }
 
 h1 {
@@ -106,7 +106,7 @@ section {
 }
 
 section .component div {
-	width: 80%;
+	width: 65%;
 	display: block;
 	margin: 0 auto;
 	padding-top: 1.5em;
@@ -221,6 +221,10 @@ ol ol a:before {
 	.component img {
 		width: 98%;
 	}
+
+    section .component div {
+        width: 90%;
+    }
 
 	header {
 		font-size: 1em;
