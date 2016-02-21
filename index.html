@@ -66,14 +66,14 @@
             
 
             // Remove active state from all navigation "a" to active...
-            $('.navigation ul li a').removeClass('active');
+            $('.navigation ol li a').removeClass('active');
 
             // Then add the active class ONLY to the appropriate navigation dot
-            $('.navigation ul li a:eq('+ index +')').addClass('active');
+            $('.navigation ol li a:eq('+ index +')').addClass('active');
         });
         
-        	$('.navigation ul li a').click(function () {
-			$('.navigation ul li a').removeClass('active');
+        	$('.navigation ol li a').click(function () {
+			$('.navigation ol li a').removeClass('active');
 				$(this).addClass('active');
 		});   
 	});
@@ -92,20 +92,30 @@
         });
     });
     </script>
+
+    <script text>
+    	$(document).ready(function() {
+    		$('.resources').parent().find('ol').hide();
+	    	$('.resources').on('click', function() {
+	    		console.log("hey");
+	    		$(this).parent().find('ol').slideToggle();
+	    	});
+	    });
+    </script>
 </head>
 <body>
 
 <header><img src="images/WSPlogo3.png" alt="WSP: Web Standards Project"> Web Standards Project</header>
 
  <div class="navigation">
-	 <ul>
+	 <ol>
         <li><a href="#one" class="nav-dot">one</a></li>
         <li><a href="#two" class="nav-dot">two</a></li>
         <li><a href="#three" class="nav-dot">three</a></li>
         <li><a href="#four" class="nav-dot">four</a></li>
         <li><a href="#five" class="nav-dot">five</a></li>
      
-     </ul>
+     </ol>
   </div>	
 
 <section id="wrapper">
@@ -130,16 +140,16 @@
           <li>Use jQuery to enable sliders using a timer</li> 
         </ol>
       
-        <ul class="buttons">
+        <ol class="buttons rectangle-list">
           <li><a href="components/1/component.html" target="_blank">View Component</a></li>
           <li>
-            <a>Resources</a>
-            <ul>
+            <a class="resources">Resources</a>
+            <ol>
               <li><a target="_blank" href="https://codyhouse.co/gem/client-testimonials-carousel/"><strong>Codyhouse:</strong> Client Testimonials Carousel</a></li>
               <li><a target="_blank" href="https://codemyviews.com/blog/sliding-client-testimonials-carousel-with-jquery"><strong>CodeMyViews:</strong> Build a Sliding Client Testimonials Carousel with jQuery</a></li>       
-            </ul> 
+            </ol> 
           </li> 
-        </ul>
+        </ol>
       </div>
   </article>
 
@@ -163,17 +173,17 @@
         <li>Use the img:hover selector to change box image on hover</li>
       </ol>
 
-      <ul class="buttons">
+      <ol class="buttons rectangle-list">
         <li><a href="components/2/component.html" target="_blank">View Component</a></li>
         <li>
-          <a>Resources</a>
-          <ul>
+          <a class="resources">Resources</a>
+          <ol>
             <li><a target="_blank" href="https://css-tricks.com/text-blocks-over-image/"><strong>CSS-TRICKS:</strong> Text Blocks Over Image</a></li>
             <li><a target="_blank" href="https://css-tricks.com/the-css-box-model/"><strong>CSS-TRICKS:</strong>The CSS Box Model</a></li>
             <li><a target="_blank" href="http://alt-web.com/DEMOS/3-CSS-boxes.shtml"><strong>Alt-web:</strong>CSS Floats and Margins</a></li>
-          </ul> 
+          </ol> 
         </li>
-      </ul>
+      </ol>
       </div>
 
   </article>
@@ -197,18 +207,18 @@
         <li>Use the javascript <code>&lt;script&gt;</code> to add active classes to the dots if the user is on the appropriate div.</li>
       </ol>
 
-      <ul class="buttons">
+      <ol class="buttons rectangle-list">
         <li><a href="components/3/component.html" target="_blank">View Component</a>
         </li>
         <li>
-          <a>Resources</a>
-          <ul>
+          <a class="resources">Resources</a>
+          <ol>
             <li><a target="_blank" href="http://webdesign.tutsplus.com/articles/vertical-and-horizontal-scrolling-with-fullpagejs--cms-24215"><strong>Tuts+:</strong>Vertical and Horizontal Scrolling</a></li>
             <li><a target="_blank" href="http://www.w3schools.com/cssref/css3_pr_word-break.asp">CSS3 word-break Property</a></li>
             <li><a target="_blank" href="http://codeplanet.io/how-to-make-a-single-page-website/"><strong>CodePlanet:</strong> How to Make a Single Page Website</a></li>     
-          </ul> 
+          </ol> 
         </li>
-      </ul>
+      </ol>
     </div>
   </article>
 
@@ -231,18 +241,18 @@
         <li>Use <strong>javascript</strong> to add the appropiate class to the navbar depending on it's position on the webpage. </li> 
       </ol>
 
-      <ul class="buttons">
+      <ol class="buttons rectangle-list">
         <li><a href="components/4/component.html" target="_blank">View Component</a></li>
         <li>
-          <a>Resources</a>
-          <ul>
+          <a class="resources">Resources</a>
+          <ol>
             <li><a target="_blank" href="https://css-tricks.com/scroll-fix-content/"><strong>CSS-Tricks:</strong> Scroll-Then-Fix Content</a></li>
 
             <li><a target="_blank" href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/"><strong>CSS-Tricks:</strong> Absolute, Relative, Fixed Positioning: How Do They Differ?</a></li>
 
-          </ul> 
+          </ol> 
         </li> 
-      </ul>
+      </ol>
     </div>
   </article>
 
@@ -265,17 +275,17 @@
         <li>Set Map Properties using javascript in the <code>&lt;script&gt;</code> tag</li>
       </ol>
 
-      <ul class="buttons">
+      <ol class="buttons rectangle-list">
         <li><a href="components/5/component.html" target="_blank">View Component</a></li>
         <li>
-          <a>Resources</a>
-          <ul>
+          <a class="resources">Resources</a>
+          <ol>
             <li><a target="_blank" href="http://www.w3schools.com/googleapi/google_maps_basic.asp"><strong>W3S:</strong> Google Maps APi</a></li>
             <li><a target="_blank" href="http://thomaslarangeira.com/3-column-footer-with-css/"><strong>Thomas Larangera:</strong> 3 column footer</a></li>
 
-          </ul> 
+          </ol> 
         </li>
-      </ul>
+      </ol>
     </div>
   </article>
 
