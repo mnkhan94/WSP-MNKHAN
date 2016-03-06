@@ -6,7 +6,10 @@ body {
 	margin:0;
 	padding:0;
 	font-family: 'Vollkorn', serif;
-	background-color: #2ecc71;
+	background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 	color: #000000;
 	overflow-x:hidden;
 
@@ -17,6 +20,9 @@ section img {
 	border-radius: 1em;
 	margin: 0 auto;
 	display: block;
+-webkit-box-shadow: -1px 2px 73px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 73px -10px rgba(0,0,0,0.75);
+box-shadow: -1px 2px 73px -10px rgba(0,0,0,0.75);
 }
 
 header {
@@ -24,14 +30,18 @@ header {
     width: 100%;
     height: 70px;
     line-height: 60px;
-    background: #34495e;
-    color: #ecf0f1;
+    background: #59FF4D;
+    color: #254723;
     font-family: 'Pacifico', cursive;
     font-size: 35px;
     padding-left: 20px;
     border-bottom: 5px solid #ddd;
     text-align: center;
     z-index: 1;
+
+        -webkit-box-shadow: -1px 2px 94px -26px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 94px -26px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 94px -26px rgba(0,0,0,0.75);
 
 }
 
@@ -109,25 +119,27 @@ section .component div {
 	width: 65%;
 	display: block;
 	margin: 0 auto;
+    margin-bottom: 3em;
 	padding-top: 1.5em;
+    padding: 5em;
+    background-color: #fff;
+    -webkit-box-shadow: -1px 2px 94px -26px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 94px -26px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 94px -26px rgba(0,0,0,0.75);
 }
 
 .component-one {
-	background-color: #ecf0f1;
 }
 
 .component-two {
-	background-color: #c0392b;
-	color: #ffffff;
+
 }
 
 .component-three {
-	background-color: #f39c12;
 }
 
 .component-four {
-	background-color: #34495e;
-	color: #ffffff;
+
 }
 
 .component-five {
@@ -218,15 +230,27 @@ ol ol a:before {
 		margin: 0;
 	}
 
+    .component {
+    }
+
 	.component img {
 		width: 98%;
 	}
 
     section .component div {
         width: 90%;
+        margin: 2em auto !important;
+        padding: 2em !important;
     }
 
 	header {
-		font-size: 1em;
+		font-size: 2em;
 	}
+}
+
+@media (max-width: 515px) {
+    header {
+        font-size: 1em;
+    }
+}
 }
