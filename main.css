@@ -69,6 +69,10 @@ body.down header.clone {
   box-sizing: inherit;
 }
 
+.center-text {
+    text-align: center;
+}   
+
 .navigation{
 -webkit-backface-visibility: hidden;
 z-index: 5;
