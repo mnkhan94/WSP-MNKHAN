@@ -131,8 +131,15 @@ section .component div {
 .component-one {
 }
 
-.component-two {
+.component-two div {
+    border: 1em solid #f1c40f;
+    background-image: url('images/symphony2.png'); 
+}
 
+.component-two .featured {
+    width: 16em;
+    margin-bottom: 3em;
+    box-shadow: none !important;
 }
 
 .component-three {
