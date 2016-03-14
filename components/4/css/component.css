@@ -35,18 +35,23 @@ h1 {
 	line-height: 21px;
 }
 
-#new-products ul li figure span {
-    display: inline-block;
-    background: #0ab3a3;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.14);
-    -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.14);
-    color: #ffffff;
-    font-size: 12px;
-    left: 0;
-    line-height: 16px;
-    padding: 1px 8px 2px;
-    position: absolute;
-    text-transform: uppercase;
-    top: 10px;
-    z-index: 2;
+figcaption {
+    margin-bottom: 4px;
+}
+
+.price {
+    color: #0ab3a3;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.special-price {
+    color: #fd6b6b;
+    text-decoration: none;
 }

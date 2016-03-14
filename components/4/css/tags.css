@@ -1,0 +1,55 @@
+/* New Tag */
+
+#new-products ul li figure .tag {
+    display: inline-block;
+    background: #0ab3a3;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.14);
+    color: #ffffff;
+    font-size: 12px;
+    left: 0;
+    line-height: 16px;
+    padding: 1px 8px 2px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 10px;
+    z-index: 2;
+}
+
+#new-products ul li figure .tag:before {
+    border-color: transparent transparent transparent #0ab3a3;
+    border-style: solid;
+    border-width: 0 0 9px 8px;
+    bottom: 10px;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -8px;
+    width: 0;
+}
+
+#new-products ul li figure .tag:after {
+    border-color: transparent transparent transparent #0ab3a3;
+    border-style: solid;
+    border-width: 9px 0 0 8px;
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -8px;
+    width: 0;
+}
+
+/* Sale Tag */
+
+#new-products ul li figure .sale {
+    top: 45px;
+}
+
+#new-products ul li figure .sale {
+    background: #FD6B6B;
+}
+
+#new-products ul li figure .sale:before, #new-products ul li figure .sale:after {
+    border-color: transparent transparent transparent #FD6B6B;
+}
