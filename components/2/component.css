@@ -9,5 +9,9 @@ h1 {
 
 #new-products ul {
 	list-style: none;
+}
+
+#new-products ul li {
 	display: inline-block;
+	margin: 20px;
 }
