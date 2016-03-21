@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,100,500,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+    margin: 0 auto;
+    font-family: Raleway;
+    font-size: 13px;
+    line-height: 25px;
+    color: #777777;
+    background-color: #ffffff;
+    text-align: center;
+    display: block;
+    width: 1200px;
+    margin-top: 45px;
+}
+
+section {
+	display: block;
+	margin: 0 auto;
+}
+
+.plan {
+	text-align: center;
+}
+
+h4, h3 {
+	margin: 0 !important;
+}
+
+.price-plans.price-plans-3 .plan {
+    width: 32%;
+}
+
+.price-plans .plan:first-child {
+    margin-left: 0;
+}
+
+.price-plans .plan {
+    float: left;
+    overflow: hidden;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #e1e4e5;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    -webkit-transition: box-shadow 0.2s linear;
+    -moz-transition: box-shadow 0.2s linear;
+    -o-transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear;
+}
+
+.spacer { height:70px; }
+.title-box { margin:0 0 30px; }
+.title-box .title-box_primary {
+	font:800 65px/1.2em 'Raleway', sans-serif;
+	text-transform:none;
+	color:#323232;
+	text-align:left;
+	margin:0 0 30px;
+	font-weight:normal;
+	margin:0;
+	text-align:center;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.title-box .title-box_primary { font-size:30px; }
+}
+@media (max-width: 600px) {
+	.title-box .title-box_primary { font-size:30px; }
+}
+.title-box { font-weight:900; }
+.title-box {
+	font:800 65px/1.2em 'Raleway', sans-serif;
+	text-transform:none;
+	color:#323232;
+	text-align:left;
+	margin:0 0 30px;
+	font-size:50px;
+	font-weight:normal;
+	margin:0;
+	text-align:center;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.title-box { font-size:30px; }
+}
+@media (max-width: 600px) {
+	.title-box { font-size:30px; }
+}
+.content_box.green .title-box, .content_box.dark-gray .title-box, .title-box, .cherry_video_parallax .title-box { color:#fff; }
+@media (min-width: 768px) and (max-width: 979px) {
+	.title-box { font-size:20px; }
+}
+@media (max-width: 600px) {
+	.title-box { font-size:20px; }
+}
+.title-box strong { font-weight:900; }
+.title-box.left .title-box_primary, .title-box.left { text-align:left; }
+.title-box.right .title-box_primary, .title-box.right { text-align:right; }
+.circles-text {
+	color:#23ba85;
+	font-size:50px !important;
+}
+
+.price-plans { padding:0; }
+.price-plans .plan {
+	border:none;
+	background:#323232;
+	border-radius:4px;
+	padding:0 0 25px;
+}
+.price-plans .plan:hover { box-shadow:0 0 5px #dfdede; }
+.price-plans .plan h3, .price-plans .plan h4 {
+	background:#f7f7f7;
+	border:none;
+	padding:0;
+}
+.price-plans .plan.item-1 h3, .price-plans .plan.item-1 h4 { background:#049cdb; }
+.price-plans .plan.item-3 h3, .price-plans .plan.item-3 h4 { background:#f2503b; }
+.price-plans .plan h3 {
+	border-radius:4px 4px 0 0;
+	color:#23ba85;
+	text-transform:none;
+	font:bold 25px/1.2em 'Raleway', sans-serif;
+	padding:35px 5px 10px;
+	border:1px solid #dfdede;
+	border-bottom:none;
+}
+.price-plans .plan h4 {
+	padding:0 5px 35px;
+	font:800 65px/1.2em 'Raleway', sans-serif;
+	color:#323232;
+	border-left:1px solid #dfdede;
+	border-right:1px solid #dfdede;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.price-plans .plan h4 { font-size:30px; }
+}
+@media (max-width: 600px) {
+	.price-plans .plan h4 { font-size:30px; }
+}
+.price-plans .plan h4 span.interval {
+	display:block;
+	font:13px/1.2em 'Raleway', sans-serif;
+	color:#777777;
+	padding-top:15px;
+	text-transform:none;
+}
+.price-plans .plan .plan-container {
+	padding:30px 0 0;
+	min-height:230px;
+}
+.price-plans .plan .plan-container .plan-features-row {
+	border:none;
+	font:bold 15px/33px 'Raleway', sans-serif;
+	padding:0 10px;
+	text-transform:none;
+	color:#fff;
+}
+.price-plans .plan .plan-container .btn {
+	margin:30px 0 0;
+	background:#23ba85;
+}
+.price-plans .plan .plan-container .btn:before { background:#fff; }
+.price-plans .plan .plan-container .btn span:after {
+	color:#fff;
+	border-color:#fff;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.price-plans .plan .plan-container .btn span:after { display:none; }
+}
+.price-plans .plan .plan-container .btn:hover span, .price-plans .plan .plan-container .btn:active span, .price-plans .plan .plan-container .btn:focus span { color:#23ba85; }
+.price-plans .plan .plan-container .btn:hover span:after, .price-plans .plan .plan-container .btn:active span:after, .price-plans .plan .plan-container .btn:focus span:after {
+	color:#323232;
+	border-color:#dfdede;
+}
+
+.btn > span {
+    position: relative;
+    z-index: 100;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 25px 10px 30px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn {
+    border: none;
+    color: #ffffff;
+    text-decoration: none;
+    background: #323232;
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+    text-transform: none;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    position: relative;
+    letter-spacing: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font: bold 15px/1.2em 'Raleway', sans-serif;
+}
+
