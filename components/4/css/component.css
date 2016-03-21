@@ -37,6 +37,7 @@ h1 {
 
 figcaption {
     margin-bottom: 4px;
+    text-transform: uppercase;
 }
 
 .price {
